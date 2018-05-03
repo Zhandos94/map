@@ -37,6 +37,13 @@ return [
                     'class' => 'yii\log\FileTarget',
                     'levels' => ['error', 'warning'],
                 ],
+                [
+                    'class' => 'yii\log\FileTarget',
+                    'levels' => ['error'],
+                    'categories' => ['hint'],
+                    'logFile' => '@runtime/logs/hint.log',
+                    'logVars' => [],
+                ],
             ],
         ],
         'errorHandler' => [
