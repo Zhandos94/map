@@ -20,6 +20,12 @@ return [
             'class' => 'yii\console\controllers\FixtureController',
             'namespace' => 'common\fixtures',
           ],
+        'migrate' => [
+            'class' => 'yii\console\controllers\MigrateController',
+            'migrationNamespaces' => [
+                'backend\modules\hint\migrations',
+            ],
+        ],
     ],
     'components' => [
         'log' => [

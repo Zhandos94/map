@@ -9,5 +9,14 @@ return [
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
+        'i18n' => [
+            'class' => Zelenin\yii\modules\I18n\components\I18N::className(),
+            'languages' => ['ru-RU', 'kz-KZ', 'en-US'],
+            'translations' => [
+                'yii' => [
+                    'class' => yii\i18n\DbMessageSource::className()
+                ]
+            ]
+        ],
     ],
 ];
